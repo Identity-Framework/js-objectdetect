@@ -748,3 +748,5 @@ var objectdetect = (function() {
 		detector: detector
 	};
 })();
+
+module.exports = objectdetect;

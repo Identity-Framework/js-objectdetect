@@ -1,0 +1,26 @@
+{
+  "name": "js-objectdetect",
+  "version": "1.0.0",
+  "description": "Computer vision in the brower",
+  "main": "js/objectdetect.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Identity-Framework/js-objectdetect.git"
+  },
+  "keywords": [
+    "Computer",
+    "vision"
+  ],
+  "author": "[\"Martin Tschirsich (https://github.com/mtschirs)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Identity-Framework/js-objectdetect/issues"
+  },
+  "homepage": "https://github.com/Identity-Framework/js-objectdetect#readme"
+}

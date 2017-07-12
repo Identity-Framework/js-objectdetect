@@ -1,3 +1,17 @@
+const eye = require('./objectdetect.eye'),
+	  frontalcatface = require('./objectdetect.frontalcatface'),
+	  frontalface_alt = require('./objectdetect.frontalface_alt'),
+	  frontalface = require('./objectdetect.frontalface'),
+	  fullbody = require('./objectdetect.fullbody'),
+	  handfist = require('./objectdetect.handfist'),
+	  handopen = require('./objectdetect.handopen'),
+	  mouth = require('./objectdetect.mouth'),
+	  nose = require('./objectdetect.nose'),
+	  profileface = require('./objectdetect.profileface'),
+	  smile = require('./objectdetect.smile'),
+	  upperbody = require('./objectdetect.upperbody');
+ 
+
 /**
  * Real-time object detector based on the Viola Jones Framework.
  * Compatible to OpenCV Haar Cascade Classifiers (stump based only).
@@ -6,7 +20,7 @@
  */
 var objectdetect = (function() {
 	"use strict";
-    	
+
     var /**
 		 * Converts from a 4-channel RGBA source image to a 1-channel grayscale
 		 * image. Corresponds to the CV_RGB2GRAY OpenCV color space conversion.
@@ -745,8 +759,24 @@ var objectdetect = (function() {
 		compileClassifier: compileClassifier,
 		detect: detect,
 		groupRectangles: groupRectangles,
-		detector: detector
+		detector: detector,
 	};
 })();
+
+// set the classifier
+eye(objectdetect);
+frontalcatface(objectdetect);
+frontalface_alt(objectdetect);
+frontalface(objectdetect);
+fullbody(objectdetect);
+handfist(objectdetect);
+handopen(objectdetect);
+mouth(objectdetect);
+nose(objectdetect);
+profileface(objectdetect);
+smile(objectdetect);
+upperbody(objectdetect);
+
+console.log(objectdetect);
 
 module.exports = objectdetect;
